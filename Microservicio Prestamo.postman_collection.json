@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "f6b4d04d-e3e8-4f67-aa8d-6808fcbc63ad",
+		"name": "Microservicio Prestamo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34567205"
+	},
+	"item": [
+		{
+			"name": "Prestamo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idlibro\": 2,\r\n    \"idmiembro\": 2,\r\n    \"motivo\": \"Préstamo para lectura\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prestamo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prestamo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
